@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show So nguyen</title>
+</head>
+<body>
+<script>
+    let n = prompt('Enter your number');
+    let count = 0;
+    let num = 2;
+    let i = 2;
+    function Prime(num) {
+        for(i = 2; i <= n/2; i++) {
+            if(num % i === 0) {
+                return false;
+            }
+        }
+        return num;
+    }
+    while (count < n) {
+        if (Prime(num)) {
+            document.write(num + '<br>');
+            count++;
+        }
+        num++;
+    }
+
+</script>
+</body>
+</html>
